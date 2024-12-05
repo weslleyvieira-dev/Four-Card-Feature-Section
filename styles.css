@@ -1,11 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   background-color: hsl(0, 0%, 98%);
 }
 
@@ -16,6 +16,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  padding-bottom: 30px;
 }
 
 main .title {
@@ -30,7 +32,7 @@ main .title .thin {
 
 main .title .bold {
   font-weight: 600;
-  margin-top: 0;
+  margin: 0 0 15px;
 }
 
 main .message {
@@ -42,7 +44,7 @@ main .blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 65px;
+  margin-top: 4%;
   align-items: center;
   justify-content: center;
   grid-template-areas:
@@ -107,6 +109,7 @@ footer {
   font-size: 12px;
   text-align: center;
   color: hsl(0, 0%, 0%);
+  z-index: 0;
 }
 
 footer a {
