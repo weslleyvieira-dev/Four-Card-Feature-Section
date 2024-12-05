@@ -1,0 +1,118 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .title {
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+}
+
+main .title .thin {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+main .title .bold {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+main .message {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+}
+
+main .blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 65px;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    "supervisor team-builder calculator"
+    "supervisor karma calculator";
+}
+
+main .blocks > div {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  padding: 10px 20px;
+  height: 220px;
+  width: 340px;
+  box-shadow: 0 5px 15px hsla(0, 0%, 75%, 0.75);
+  border-top: solid 4px;
+  position: relative;
+}
+
+main .blocks > div h3 {
+  color: hsl(234, 12%, 34%);
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+main .blocks > div p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  padding: 0 10px;
+  margin-top: 0;
+}
+
+main .blocks > div img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+main .blocks .supervisor {
+  grid-area: supervisor;
+  align-self: center;
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+main .blocks .team-builder {
+  grid-area: team-builder;
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+main .blocks .karma {
+  grid-area: karma;
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+main .blocks .calculator {
+  grid-area: calculator;
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+}
+
+footer a {
+  color: hsl(228, 45%, 60%);
+}
+
+footer a:hover {
+  color: hsl(228, 45%, 40%);
+}
